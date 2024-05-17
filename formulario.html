@@ -5,33 +5,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <img src="logoSena.png" alt="image" width="100 " heigth="100">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <p>
+  <h1>hola</h1>
+  </p>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="primerapag.html">pagina1</a>
 
-</head>
-
+        </li>
+        <li>
+          <a href="segundapagi.html">pagina2</a>
+        </li>
+        <li>
+          <a href="tercerapag.html">pagina3</a>
+        <li>
+          <a href="formulario.html">formulario</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 <body>
-  <form action="controlador" method="get">
+
+  <form action="controlador" method="post">
     <div>
       <label for="">Ingrese su edad</label>
       <input type="number" step="1" min="0" max="17" value="5" name="edad" disabled>
     </div>
-    <div><label for="nombre">Nombre</label></div>
-    <div><input type="text" name="nombre" required placeholder="Ingrese su nombre" id="nombre" autofocus
-        autocomplete=""></div>
-    <label for="">Ingrese su email</label>
-    <div><input type="email" id="email" name="email" pattern="[a-A-Z0-9._%+-]+@gmail\.com" required></div>
-
+    <div><label for="nombre">Nombre</label>
+      <input type="text" name="nombre" required placeholder="Ingrese su nombre" id="nombre" autofocus autocomplete="">
+    </div>
+    <label for="">Ingrese su correo</label>
+    <input type="email" id="email" name="email" pattern="[a-A-Z0-9._%+-]+@gmail\.com" required>
+    </div>
     <div>
       <label for="tele">Ingrese su telefono</label>
-      <input type="text" id="number" pattern="[0-9]{0,10}" required>
+      <input type="text" id="number" name="telefono" pattern="[0-9]{0,10}" required>
     </div>
 
     <div>
       <label for="color">selccione un color</label>
       <input type="color" id="color">
     </div>
-
-    <button type="submit">guardar</button>
+    <div>
+      <form action="ciudad"> seleccione su ciudad</form>
+      <select name="ciudad" id="ciudad">
+        <option value="1">Giron</option>
+        <option value="2">Bucaramanga</option>
+        <option value="3" selected>Florida</option>
+      </select>
+      <div>
+        <label>
+          <input type="radio" name="genero" value="Hombre" checked>Hombre</label>
+        </label>
+        <label>
+          <input type="radio" name="genero" value="Mujer">Mujer</label>
+        </label>
+        <div>
+          <label>
+            <input type="checkbox" name="habilidad" value="HTML" checked>HTML
+          </label>
+          <label>
+            <input type="checkbox" name="habilidad" value="GIT" checked>GIT
+          </label>
+          <label>
+            <input type="checkbox" name="habilidad" value="CLI" checked>CLI
+          </label>
+          <label>
+            <input type="checkbox" name="habilidad" value="JS">JS
+          </label>
+        </div>
+        <div>
+          <input accept="image" type="file" multiple>
+        </div>
+      </div>
+      <button type="submit">Guardar</button>
   </form>
 </body>
 
